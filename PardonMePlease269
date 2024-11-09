@@ -218,17 +218,3 @@ Main:AddToggle({
 		print(Value)
 	end    
 })
-
-Main:AddButton({
-	Name = "Rejoin",
-	Callback = function()
-	local ts = game:GetService("TeleportService")
-
-local p = game:GetService("Players").LocalPlayer
-
-
-
-ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
-      		print("button pressed")
-  	end    
-})
